@@ -1,0 +1,19 @@
+sources:
+  - name: erp 
+    description: sistema de vends da Northwind
+    schema: RAW_ADVENTURE_WORKS
+    database: FEA24_11
+    tables:
+      - name: SALESORDERHEADER
+      - name: SALESORDERDETAIL
+      - name: PRODUCT
+      - name: SALESPERSON
+      - name: EMPLOYEE
+      - name: CUSTOMER
+      - name: PERSON
+      - name: SALESORDERHEADERSALESREASON
+      - name: SALESREASON
+      - name: CREDITCARD
+      - name: ADDRESS
+      - name: STATEPROVINCE
+      - name: COUNTRYREGION

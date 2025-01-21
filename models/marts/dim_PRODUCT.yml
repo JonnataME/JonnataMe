@@ -1,0 +1,60 @@
+models:
+  - name: dim_product
+    description: Dimenção de produtos do sistema PDV da raw_adventure_works.
+    columns:
+      - name: CLASS
+        description: PARA PREENCHER.
+        data_tests:
+          - unique
+          - not_null
+
+      - name: PRODUCT_LINE
+        description: PARA PREENCHER.
+
+      - name: PRODUCT_MODEL_ID
+        description: PARA PREENCHER.
+
+      - name: PRODUCT_NUMBER
+        description: PARA PREENCHER.
+
+      - name: PRODUCT_SUB_CATEGORY_ID
+        description: PARA PREENCHER.
+
+      - name: REORDER_POINT
+        description: PARA PREENCHER.
+
+      - name: ROW_GUID
+        description: PARA PREENCHER.
+
+      - name: SAFETY_STOCK_LEVEL
+        description: PARA PREENCHER.
+
+      - name: SELLEND_DATE
+        description: PARA PREENCHER.
+
+      - name: SELL_START_DATE
+        description: PARA PREENCHER.
+
+      - name: SIZE
+        description: PARA PREENCHER.
+
+      - name: SIZE_UNIT_MEASURE_CODE
+        description: PARA PREENCHER.
+
+      - name: STANDARD_COST
+        description: PARA PREENCHER.
+
+      - name: STYLE
+        description: PARA PREENCHER.
+
+      - name: WEIGHT
+        description: PARA PREENCHER.
+
+      - name: WEIGHT_UNIT_MEASURE_CODE
+        description: PARA PREENCHER.
+
+      - name: ORDER_QTY
+        description: PARA PREENCHER.
+
+      - name: UNIT_PRICE
+        description: PARA PREENCHER.
