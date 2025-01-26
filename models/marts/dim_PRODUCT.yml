@@ -1,12 +1,9 @@
 models:
-  - name: dim_product
-    description: Dimenção de produtos do sistema PDV da raw_adventure_works.
+  - name: dim_PRODUCT
+    description: Dimensão de produtos do sistema PDV da Northwind.
     columns:
-      - name: CLASS
+      - name: PK_PRODUCT
         description: PARA PREENCHER.
-        data_tests:
-          - unique
-          - not_null
 
       - name: PRODUCT_LINE
         description: PARA PREENCHER.

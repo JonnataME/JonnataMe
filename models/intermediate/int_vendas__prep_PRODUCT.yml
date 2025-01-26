@@ -2,11 +2,14 @@ models:
   - name: int_vendas__prep_PRODUCT
     description: Modelo que enriquece os dados de produtos com categorias e fornecedor.
     columns:
-      - name: CLASS
-        description: PARA PREENCHER.
+      - name: product_id
+        description: chave primária dos registros de produto.
         data_tests:
           - unique
           - not_null
+
+      - name: CLASS
+        description: PARA PREENCHER.
 
       - name: PRODUCT_LINE
         description: PARA PREENCHER.

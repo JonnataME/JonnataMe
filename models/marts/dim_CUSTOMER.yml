@@ -1,0 +1,21 @@
+models:
+  - name: dim_CUSTOMER
+    description: Dimensão de clientes do sistema PDV da Northwind.
+    columns:
+      - name: CUSTOMER_ID
+        description: PARA PREENCHER.
+
+      - name: MODIFIED_DATE
+        description: PARA PREENCHER.
+
+      - name: PERSON_ID
+        description: PARA PREENCHER.
+
+      - name: ROW_GUID
+        description: PARA PREENCHER.
+
+      - name: STORE_ID
+        description: PARA PREENCHER.
+
+      - name: TERRITORY_ID
+        description: PARA PREENCHER.
