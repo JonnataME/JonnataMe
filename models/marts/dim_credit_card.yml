@@ -1,10 +1,10 @@
 models:
   - name: dim_credit_card
-    description: dimensão de cartão de credito do sistema pdv da northwind.
+    description: dimensão de cartão de credito.
     columns:
       - name: credit_card_id
-        description: para preencher.
+        description: Descrição de cartão de credito.
         data_tests: ['unique', 'not_null']
 
       - name: card_type
-        description: para preencher.
+        description: Descrição tipo de cartão.

@@ -1,13 +1,13 @@
 models:
   - name: dim_sales_reason
-    description: dimensão de motivo de venda do sistema pdv da northwind.
+    description: dimensão de motivo de venda.
     columns:
       - name: sales_order_detail_id
-        description: para preencher.
+        description: Identificador detalhe do pedido de venda.
         data_tests: ['not_null']
 
       - name: reason_type
-        description: para preencher.
+        description: tipo de motivo.
 
       - name: reason_name
-        description: para preencher.
+        description: razão de nome.

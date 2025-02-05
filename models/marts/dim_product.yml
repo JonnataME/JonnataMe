@@ -1,22 +1,22 @@
 models:
   - name: dim_product
-    description: dimensão de produtos do sistema pdv da northwind.
+    description: dimensão de produtos.
     columns:
       - name: product_id
-        description: para preencher.
+        description: Identificador do produto.
         data_tests: ['unique', 'not_null']
 
       - name: product_name
-        description: para preencher.
+        description: Descrição de nome do produto.
 
       - name: product_line
-        description: para preencher.
+        description: Descrição de linha de produto.
 
       - name: product_category_name
-        description: para preencher.
+        description: Descrição nome da categoria do produto.
 
       - name: product_subcategory_name
-        description: para preencher.
+        description: Descrição nome da subcategoria do produto.
 
       - name: product_model_name
-        description: para preencher.
+        description: modelo do produto.

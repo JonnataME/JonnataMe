@@ -1,13 +1,13 @@
 models:
   - name: dim_customer
-    description: dimensão de clientes do sistema pdv da northwind.
+    description: dimensão de clientes.
     columns:
       - name: customer_id
-        description: para preencher.
+        description: Descrição de Cliente.
         data_tests: ['unique', 'not_null']
 
       - name: customer_type
-        description: para preencher.
+        description: Descrição de tipo de Cliente.
 
       - name: customer_name
-        description: para preencher.
+        description: Descrição de nome do Cliente.
