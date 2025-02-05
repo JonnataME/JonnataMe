@@ -1,0 +1,29 @@
+sources:
+  - name: erp
+    description: sistema de vendas da northwind
+    database: fea24_11
+    schema: raw_adventure_works
+    loaded_at_field: "CAST(MODIFIEDDATE AS TIMESTAMP)"
+    freshness:
+      warn_after:
+        count: 24
+        period: hour
+      error_after:
+        count: 50000
+        period: day
+    tables:
+      - name: address
+      - name: countryregion
+      - name: creditcard
+      - name: customer
+      - name: person
+      - name: product
+      - name: productcategory
+      - name: productmodel
+      - name: productsubcategory
+      - name: salesorderdetail
+      - name: salesorderheader
+      - name: salesorderheadersalesreason
+      - name: salesreason
+      - name: stateprovince
+      - name: store
