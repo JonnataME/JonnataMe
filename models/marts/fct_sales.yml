@@ -1,0 +1,49 @@
+models:
+  - name: fct_sales
+    description: dimensão de motivo de venda do sistema pdv da northwind.
+    columns:
+      - name: sales_order_detail_id
+        description: para preencher.
+        data_tests: ['unique', 'not_null']
+
+      - name: sales_order_id
+        description: para preencher.
+
+      - name: sales_person_id
+        description: para preencher.
+
+      - name: territory_id
+        description: para preencher.
+
+      - name: credit_card_id
+        description: para preencher.
+
+      - name: product_id
+        description: para preencher.
+
+      - name: order_date
+        description: para preencher.
+
+      - name: due_date
+        description: para preencher.
+
+      - name: ship_date
+        description: para preencher.
+
+      - name: online_order_flag
+        description: para preencher.
+
+      - name: status_name
+        description: para preencher.
+
+      - name: order_qty
+        description: para preencher.
+
+      - name: unit_price
+        description: para preencher.
+
+      - name: unit_price_discount
+        description: para preencher.
+
+      - name: total_value
+        description: para preencher.

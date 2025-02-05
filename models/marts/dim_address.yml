@@ -1,0 +1,19 @@
+models:
+  - name: dim_address
+    description: dimensão de endereço do sistema pdv da northwind.
+    columns:
+      - name: address_id
+        description: para preencher.
+        data_tests: ['unique', 'not_null']
+
+      - name: postal_code
+        description: para preencher.
+
+      - name: state_province_code
+        description: para preencher.
+
+      - name: state_province_name
+        description: para preencher.
+
+      - name: city_name
+        description: para preencher.
