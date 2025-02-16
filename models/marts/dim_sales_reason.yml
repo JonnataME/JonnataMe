@@ -2,7 +2,7 @@ models:
   - name: dim_sales_reason
     description: dimensão de motivo de venda.
     columns:
-      - name: sales_order_detail_id
+      - name: sales_order_detail_uid
         description: Identificador detalhe do pedido de venda.
         data_tests: ['not_null']
 
