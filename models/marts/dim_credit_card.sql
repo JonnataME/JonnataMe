@@ -4,7 +4,8 @@ with
     ),
     final as (
         select
-            credit_card.credit_card_id
+            credit_card.credit_card_uid
+            , credit_card.credit_card_id
             , credit_card.card_type
         from credit_card
     )

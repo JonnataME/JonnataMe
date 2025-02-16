@@ -2,7 +2,6 @@ with
     sales_order_header as (
         select
             cast(salesorderid as int) as sales_order_id
-            , cast(salespersonid as int) as sales_person_id
             , cast(territoryid as int) as territory_id
             , cast(billtoaddressid as int) as bill_to_address_id
             , cast(shiptoaddressid as int) as ship_to_address_id
@@ -21,13 +20,13 @@ with
 
     final as (
         select
-            sales_order_id
-            , sales_person_id
-            , territory_id
-            , bill_to_address_id
-            , ship_to_address_id
-            , customer_id
-            , credit_card_id
+            {{ dbt_utils.generate_surrogate_key(['sales_order_id']) }} as sales_order_uid
+            , {{ dbt_utils.generate_surrogate_key(['territory_id']) }} as territory_uid
+            , {{ dbt_utils.generate_surrogate_key(['bill_to_address_id']) }} as bill_to_address_uid
+            , {{ dbt_utils.generate_surrogate_key(['ship_to_address_id']) }} as ship_to_address_uid
+            , {{ dbt_utils.generate_surrogate_key(['customer_id']) }} as customer_uid
+            , {{ dbt_utils.generate_surrogate_key(['credit_card_id']) }} as credit_card_uid
+            , sales_order_id
             , due_date
             , order_date
             , ship_date

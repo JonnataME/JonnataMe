@@ -7,5 +7,14 @@ with
         from {{ source('erp', 'salesreason') }}  
     )
 
+    , final as (
+        select
+            {{ dbt_utils.generate_surrogate_key(['sales_reason_id']) }} as sales_reason_uid
+            , sales_reason_id
+            , reason_type
+            , reason_name
+        from sales_reason
+    )
+
 select *
-from sales_reason
+from final

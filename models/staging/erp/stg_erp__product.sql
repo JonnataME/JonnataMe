@@ -10,5 +10,17 @@ with
         from {{ source('erp', 'product') }}
     )
 
+    , final as (
+        select 
+            {{ dbt_utils.generate_surrogate_key(['product_id']) }} as product_uid
+            , {{ dbt_utils.generate_surrogate_key(['product_model_id']) }} as product_model_uid
+            , {{ dbt_utils.generate_surrogate_key(['product_subcategory_id']) }} as product_subcategory_uid
+            , product_id
+            , product_class
+            , product_name
+            , product_line
+        from product
+    )
+
 select *  
-from product
+from final

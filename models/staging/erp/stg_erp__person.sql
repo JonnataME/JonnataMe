@@ -12,7 +12,8 @@ with
     final as (
     
         select
-            person_id
+            {{ dbt_utils.generate_surrogate_key(['person_id']) }} as person_uid
+            , person_id
             , person_type
             , trim(concat(first_name, ' ', middle_name, ' ', last_name)) as person_name
         from person

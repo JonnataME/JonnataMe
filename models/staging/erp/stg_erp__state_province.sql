@@ -9,5 +9,17 @@ with
         from {{ source('erp', 'stateprovince') }}
     )
 
+    , final as (
+        select
+            {{ dbt_utils.generate_surrogate_key(['state_province_id']) }} as state_province_uid
+            , {{ dbt_utils.generate_surrogate_key(['territory_id']) }} as territory_uid
+            , {{ dbt_utils.generate_surrogate_key(['country_region_code']) }} as country_region_uid
+            , state_province_id
+            , state_province_code
+            , state_province_name
+        from state_province
+            
+    )
+
 select *
-from state_province
+from final

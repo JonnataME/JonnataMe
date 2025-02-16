@@ -7,6 +7,16 @@ with
             , cast(city as varchar) as city_name
         from {{ source('erp', 'address') }}  
     )
+    
+    , final as (
+        select
+            {{ dbt_utils.generate_surrogate_key(['address_id']) }} as address_uid
+            , {{ dbt_utils.generate_surrogate_key(['state_province_id']) }} as state_province_uid
+            , address_id
+            , postal_code
+            , city_name
+        from address
+    )
 
 select *
-from address
+from final

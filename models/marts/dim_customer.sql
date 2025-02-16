@@ -10,15 +10,13 @@ with
     ),
     final AS (
         select
-            customer.customer_id
-            , case
-                when customer.person_id is not null then 'person'
-                when customer.store_id is not null then 'store'
-              end as customer_type
+            customer.customer_uid
+            , customer.customer_id
+            , customer.customer_type
             , COALESCE(person.person_name, store.store_name) as customer_name
         from customer
-        left join person on customer.person_id = person.person_id
-        left join store on customer.store_id = store.store_id
+        left join person on customer.person_uid = person.person_uid
+        left join store on customer.store_uid = store.store_uid
     )
 
 select *
