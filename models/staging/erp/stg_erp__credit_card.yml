@@ -1,6 +1,6 @@
 models:
-  - name: dim_credit_card
-    description: Dimensão de cartão de credito, com os tipos de cartão de crédito realizados nas vendas.
+  - name: stg_erp__credit_card
+    description: Tabela staging com os cadastros do cartão de credito.
     columns:
       - name: credit_card_uid
         description:  Identificador único do cartão de credito.
