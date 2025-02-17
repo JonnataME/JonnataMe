@@ -1,10 +1,13 @@
 models:
   - name: dim_product
-    description: dimensão de produtos.
+    description: Dimensão de produtos com categorias, subcategorias, linha e modelo de produto.
     columns:
-      - name: product_id
-        description: Identificador do produto.
+      - name: product_uid
+        description: Identificador único do produto.
         data_tests: ['unique', 'not_null']
+
+      - name: product_id
+        description: Identificador natural do produto.
 
       - name: product_name
         description: Descrição de nome do produto.

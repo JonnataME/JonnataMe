@@ -1,13 +1,13 @@
 models:
   - name: dim_sales_reason
-    description: dimensão de motivo de venda.
+    description: Dimensão de motivo de venda, como ações de marketing, promoções e outros tipos.
     columns:
       - name: sales_order_detail_uid
-        description: Identificador detalhe do pedido de venda.
+        description: Identificador único de detalhe do pedido de venda.
         data_tests: ['not_null']
 
       - name: reason_type
-        description: tipo de motivo.
+        description: Descrição com o tipo de motivo de venda.
 
       - name: reason_name
-        description: razão de nome.
+        description: Descrição com o motivo de venda.
