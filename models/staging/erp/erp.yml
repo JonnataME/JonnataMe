@@ -1,6 +1,6 @@
 sources:
   - name: erp
-    description: sistema de vendas da northwind
+    description: Fonte da loja Adventure Works, com as tabelas relacionado ao evento de vendas, realiado aos clientes da loja, podendo ser clientes individuais ou outras lojas.
     database: fea24_11
     schema: raw_adventure_works
     loaded_at_field: "CAST(MODIFIEDDATE AS TIMESTAMP)"
